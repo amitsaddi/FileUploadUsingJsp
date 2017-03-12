@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Location dataset Loading tool - CIS</title>
+<link rel="stylesheet" type ="text/css" href="default.css">
+</head>
+<body>
+
+<h1> Location (Limited dataset) Load</h1>
+
+<h2> How to use this tool</h2>
+
+<h3> 
+Step 1 : Choose the target environment (SIT1 /SIT3) <br>
+Before loading the file pl. confirm the following <br>
+<ul>
+<li> The file extension is .csv
+<li> The file does not have any header in it.
+<li> There is one location id in each row.
+</ul>
+</h3>
+
+<hr class="style14">
+<form action = "loadData" >
+<table>
+<tr> 
+<th> <input type="radio" name="env" value="SIT1" checked> SIT1 </th>
+<th>  <input type="radio" name="env" value="SIT2"> SIT2<br> </th>
+</tr>
+
+</table>
+  <br/>
+  
+  <table>
+  <tr>
+<th>   File to upload: <input type="file" name="upfile"> </th>
+</tr>
+</table>
+<br/>
+
+  <input type="submit" value="Submit">
+
+ </form>
+<hr class="style14">  
+
+
+</body>
+</html>
